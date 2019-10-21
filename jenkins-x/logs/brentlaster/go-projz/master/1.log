@@ -1,0 +1,70 @@
+
+Showing logs for build [32mbrentlaster-go-projz-master-1[0m stage [32mrun-make[0m and container [32mstep-credential-initializer-tsj5j[0m
+{"level":"warn","ts":1571629994.6869123,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1571629994.6873329,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mbrentlaster-go-projz-master-1[0m stage [32mrun-make[0m and container [32mstep-working-dir-initializer-t8ssb[0m
+{"level":"warn","ts":1571629995.7791102,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1571629995.7803307,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+
+Showing logs for build [32mbrentlaster-go-projz-master-1[0m stage [32mrun-make[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mbrentlaster-go-projz-master-1[0m stage [32mrun-make[0m and container [32mstep-git-source-brentlaster-go-projz-master-64qww[0m
+{"level":"warn","ts":1571630000.7974133,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1571630001.6994605,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/***********/go-projz.git @ v0.0.1 in path /workspace/source"}
+
+Showing logs for build [32mbrentlaster-go-projz-master-1[0m stage [32mrun-make[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:ab217254882d9e69254043532f735c4fdc53e1e6
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mbrentlaster-go-projz-master-1[0m stage [32mrun-make[0m and container [32mstep-setup-jx-git-credentials[0m
+Generated Git credentials file /workspace/xdg_config/git/credentials
+
+Showing logs for build [32mbrentlaster-go-projz-master-1[0m stage [32mrun-make[0m and container [32mstep-build-make-build[0m
+CGO_ENABLED=0 GO15VENDOREXPERIMENT=1 go build -ldflags '' -o bin/go-projz main.go
+
+Showing logs for build [32mbrentlaster-go-projz-master-1[0m stage [32mrun-make[0m and container [32mstep-source-mkdir-brentlaster-go-projz-master-blm9m[0m
+{"level":"warn","ts":1571630006.9810603,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1571630006.9875667,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /pvc/run-make/workspace\""}
+
+Showing logs for build [32mbrentlaster-go-projz-master-1[0m stage [32mrun-make[0m and container [32mstep-source-copy-brentlaster-go-projz-master-b4ks9[0m
+{"level":"warn","ts":1571630007.280908,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1571630007.290336,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"cp -r /workspace/source/. /pvc/run-make/workspace\""}
+
+Showing logs for build [32mbrentlaster-go-projz-master-1[0m stage [32meverything-else[0m and container [32mstep-credential-initializer-j4j46[0m
+{"level":"warn","ts":1571630010.4592547,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1571630010.459678,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mbrentlaster-go-projz-master-1[0m stage [32meverything-else[0m and container [32mstep-working-dir-initializer-qlt4k[0m
+{"level":"warn","ts":1571630011.5166948,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1571630011.517273,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+
+Showing logs for build [32mbrentlaster-go-projz-master-1[0m stage [32meverything-else[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mbrentlaster-go-projz-master-1[0m stage [32meverything-else[0m and container [32mstep-create-dir-workspace-v9l6q[0m
+{"level":"warn","ts":1571630024.57036,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1571630024.5715742,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+
+Showing logs for build [32mbrentlaster-go-projz-master-1[0m stage [32meverything-else[0m and container [32mstep-source-copy-workspace-m2g8m[0m
+{"level":"warn","ts":1571630024.908431,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1571630024.9189403,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"cp -r /pvc/run-make/workspace/. /workspace/source\""}
+
+Showing logs for build [32mbrentlaster-go-projz-master-1[0m stage [32meverything-else[0m and container [32mstep-build-container-build[0m
+[36mINFO[0m[0000] No base image, nothing to extract            
+[36mINFO[0m[0000] cmd: EXPOSE                                  
+[36mINFO[0m[0000] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0000] Using files from context: [/workspace/source/bin] 
+[36mINFO[0m[0000] Skipping unpacking as no commands require it. 
+[36mINFO[0m[0000] Taking snapshot of full filesystem...        
+[36mINFO[0m[0000] EXPOSE 8080                                  
+[36mINFO[0m[0000] cmd: EXPOSE                                  
+[36mINFO[0m[0000] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0000] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0000] ENTRYPOINT ["/go-projz"]                     
+[36mINFO[0m[0000] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0000] Using files from context: [/workspace/source/bin] 
+[36mINFO[0m[0000] COPY ./bin/ /                                
+[36mINFO[0m[0000] Taking snapshot of files...                  
+error pushing image: failed to push to destination gcr.io/***********/go-projz:0.0.1: Get https://gcr.io/v2/token?scope=repository%3A***********%2Fgo-projz%3Apush%2Cpull&service=gcr.io: invoking docker-credential-gcr: exit status 1; output: docker-credential-gcr/helper: could not retrieve GCR's access token: google: error getting credentials using GOOGLE_APPLICATION_CREDENTIALS environment variable: open /kaniko-secret/secret.json: no such file or directory
+[31m
+Pipeline failed on stage 'everything-else' : container 'step-build-container-build'. The execution of the pipeline has stopped.[0m
